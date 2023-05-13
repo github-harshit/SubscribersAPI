@@ -1,0 +1,31 @@
+GET http://localhost:8000/subscribers
+
+###
+
+GET http://localhost:8000/subscribers/645fad7a8978c320e60139ed
+
+
+###
+
+POST http://localhost:8000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Amazing Person", 
+    "subscribedToChannel": "Web Dev"
+}
+
+###
+DELETE http://localhost:8000/subscribers/645f228c07a51a04cdda5447
+
+
+### 
+PATCH http://localhost:8000/subscribers/645f228c07a51a04cdda5447
+Content-Type: application/json
+
+{
+    "name" : "Old  name"
+}
+
+
+
